@@ -1,0 +1,14 @@
+version: "3.7"
+services:
+  app:
+    build: .
+    ports:
+      - "3333:3333"
+    volumes:
+      - ./:/app:ro
+      - /app/node_modules
+    container_name: "${PROJECT_NAME}"
+    environment:
+      - .env
+    
+
