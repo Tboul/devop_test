@@ -82,7 +82,7 @@ app.use(session({
 app.use(cors())
 app.use(express.json())
 app.get("/api/v1", (req, res) => {
-  res.send("<h1>Yap It's Alive!</h1>"),
+  res.send("<h1>Yap It's Alive! - just testing</h1>"),
     console.log("yes its running")
 
 
